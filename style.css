@@ -198,4 +198,13 @@ header {
   .nav{
     grid-column: 3/ 4;
   }
+
+  .nav-list {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    column-gap: 2rem;
+  }
 }
