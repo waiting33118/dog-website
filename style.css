@@ -114,14 +114,55 @@ header {
   color: #267b98;
 }
 
+.navbar-toggle {
+  visibility: hidden;
+  position: absolute;
+}
+
 .navbar-toggle:checked ~ .nav {
   transform: scale(1, 1);
   }
 
-  .navbar-toggle:checked ~ .nav .nav-item {
-  transition: opacity 0.2s ease-out 0.15s;
+.navbar-toggle:checked ~ .nav .nav-item {
   opacity: 1;
-  }
+  transition: opacity 0.2s ease-out 0.15s;
+}
+
+.navbar-toggle-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 7.5%;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 30px;
+  height: 3px;
+  background: #267b98;
+}
+
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+  left: 0;
+  content: "";
+}
+
+.hamburger::before {
+  top: 8px;
+}
+
+.hamburger::after {
+  bottom: 8px;
+}
 
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
