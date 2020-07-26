@@ -170,4 +170,32 @@ header {
     font-size: 1.2rem;
     padding: 0.75rem 2rem;
   }
+
+  /*Main Header*/
+  /*移除漢堡排*/
+  .navbar-toggle-label {
+    display: none;
+  }
+  /*導覽列 CSS 樣式設定復原*/
+  .nav {
+    all: unset;
+  }
+  /*導覽項目 CSS 樣式設定復原*/
+  .nav-item {
+    margin: 0;
+    opacity: 1; 
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .navbar-brand {
+    grid-column: 2/ 3;
+  }
+
+  .nav{
+    grid-column: 3/ 4;
+  }
 }
