@@ -230,6 +230,8 @@ background-image: url("https://images.unsplash.com/photo-1535294435445-d7249524e
   letter-spacing: 1px;
 }
 
+/*  */
+
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
   .action {
@@ -272,5 +274,30 @@ background-image: url("https://images.unsplash.com/photo-1535294435445-d7249524e
     align-items: center;
     justify-content: end;
     column-gap: 2rem;
+  }
+
+  .banner-wrapper {
+    gap: 1.5rem;
+    grid-template-areas: 
+    "main main main left"
+    "main main main right";
+  }
+
+  .main-banner {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .main-banner .banner-title {
+    font-size: 4rem;
+  }
+  .main-banner .banner-description {
+    font-size: 2rem;
+  }
+  .sub-banner .banner-title {
+    font-size: 2rem;
+  }
+  .sub-banner .action {
+    font-size: 1.2rem;
   }
 }
